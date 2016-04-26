@@ -7,13 +7,16 @@ import (
 )
 
 var ColorRed string
+var ColorYellow string
 var ColorReset string
 
 func init() {
 	ColorRed = ""
+	ColorYellow = ""
 	ColorReset = ""
 	if !StdErrPiped() { // check if stderr is terminal
 		ColorRed = ansi.ColorCode("red:black")
+		ColorYellow = ansi.ColorCode("yellow:black")
 		ColorReset = ansi.ColorCode("reset")
 	}
 }
