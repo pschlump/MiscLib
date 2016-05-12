@@ -52,7 +52,7 @@ func init() {
 		ColorRed = ansi.ColorCode("red:black")
 		ColorYellow = ansi.ColorCode("yellow:black")
 		ColorGreen = ansi.ColorCode("green:black")
-		ColorBlue = ansi.ColorCode("blue:black")
+		ColorBlue = ansi.ColorCode("blue+b:black")
 		ColorBlack = ansi.ColorCode("black:black")
 		ColorMagenta = ansi.ColorCode("magenta:black")
 		ColorCyan = ansi.ColorCode("cyan:black")
