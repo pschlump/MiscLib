@@ -30,13 +30,28 @@ Colors
 * white
 */
 
+// Red
 var ColorRed string
+
+// Yellow
 var ColorYellow string
+
+// Green
 var ColorGreen string
+
+// Blue
 var ColorBlue string
+
+// Black
 var ColorBlack string
+
+// Magenta
 var ColorMagenta string
+
+// Cyan
 var ColorCyan string
+
+// Reset to default color
 var ColorReset string
 
 func init() {
@@ -60,6 +75,7 @@ func init() {
 	}
 }
 
+// InArray returns the subscript if the string 's' is found in the array 'arr', else -1
 func InArray(s string, arr []string) int {
 	for i, v := range arr {
 		if v == s {
@@ -69,6 +85,7 @@ func InArray(s string, arr []string) int {
 	return -1
 }
 
+// StdErrPiped returns true if os.Stderr apears to be send to a pipe
 func StdErrPiped() bool {
 	fi, _ := os.Stderr.Stat() // get the FileInfo struct describing the standard input.
 
@@ -79,6 +96,7 @@ func StdErrPiped() bool {
 	return false
 }
 
+// StdErrPiped returns true if os.Stdout apears to be send to a pipe
 func StdOutPiped() bool {
 	fi, _ := os.Stdout.Stat() // get the FileInfo struct describing the standard input.
 
@@ -89,6 +107,7 @@ func StdOutPiped() bool {
 	return false
 }
 
+// StdErrPiped returns true if os.Stdin apears to be send to a pipe
 func StdInPiped() bool {
 	fi, _ := os.Stdin.Stat() // get the FileInfo struct describing the standard input.
 
