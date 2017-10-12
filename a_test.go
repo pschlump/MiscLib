@@ -1,6 +1,9 @@
 package MiscLib
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 func Test_InArray(t *testing.T) {
@@ -43,6 +46,7 @@ func Test_IsTerminal(t *testing.T) {
 			t.Errorf("Error, test of ColorRed - should be non empty string, got empty string\n")
 		}
 	}
+	fmt.Printf("->%s<- ->%s<- ->%s<-\n", ColorRed, ColorGreen, ColorReset)
 }
 
 /* vim: set noai ts=4 sw=4: */

@@ -51,6 +51,10 @@ var ColorMagenta string
 // Cyan
 var ColorCyan string
 
+var ColorBlueOnWhite string
+var ColorMagentaOnWhite string
+var ColorGreenOnWhite string
+
 // Reset to default color
 var ColorReset string
 
@@ -62,15 +66,21 @@ func init() {
 	ColorBlack = ""
 	ColorMagenta = ""
 	ColorCyan = ""
+	ColorBlueOnWhite = ""
+	ColorMagentaOnWhite = ""
+	ColorGreenOnWhite = ""
 	ColorReset = ""
 	if !StdErrPiped() { // check if stderr is terminal
 		ColorRed = ansi.ColorCode("red:black")
 		ColorYellow = ansi.ColorCode("yellow:black")
 		ColorGreen = ansi.ColorCode("green:black")
-		ColorBlue = ansi.ColorCode("blue+b:black")
+		ColorBlue = ansi.ColorCode("blue:black")
 		ColorBlack = ansi.ColorCode("black:black")
 		ColorMagenta = ansi.ColorCode("magenta:black")
 		ColorCyan = ansi.ColorCode("cyan:black")
+		ColorBlueOnWhite = ansi.ColorCode("blue:white")
+		ColorMagentaOnWhite = ansi.ColorCode("magenta:white")
+		ColorGreenOnWhite = ansi.ColorCode("green+b:white")
 		ColorReset = ansi.ColorCode("reset")
 	}
 }
