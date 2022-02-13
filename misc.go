@@ -3,7 +3,7 @@ package MiscLib
 import (
 	"os"
 
-	"github.com/mgutz/ansi"
+	"github.com/pschlump/ansi"
 )
 
 /*
