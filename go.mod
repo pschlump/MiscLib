@@ -1,6 +1,6 @@
 module github.com/pschlump/MiscLib
 
-go 1.17
+go 1.22.0
 
 require (
 	github.com/mattn/go-colorable v0.1.12 // indirect
