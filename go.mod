@@ -2,7 +2,7 @@ module github.com/pschlump/MiscLib
 
 go 1.22.0
 
-require github.com/pschlump/ansi v1.0.6
+require github.com/pschlump/ansi v1.0.7
 
 require (
 	github.com/pschlump/go-colorable v0.0.22 // indirect
